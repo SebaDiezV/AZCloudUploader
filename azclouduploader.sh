@@ -18,8 +18,8 @@ echo 'inicia sesión en Azure para continuar'
 read -p "Ingresa el nombre de la Cuenta de Almacenamiento:" storage_account_name
 read -p "Ingresa tu Contraseña de almacenamiento:" storage_key
 echo
-echo $storage_account_name
-echo $1
+echo "Revisando Cuenta de Almacenamiento $storage_account_name
+echo 
 
 
 
