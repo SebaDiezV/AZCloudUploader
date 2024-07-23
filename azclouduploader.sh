@@ -22,8 +22,6 @@ read -s -p "Ingresa tu Contraseña de almacenamiento: " storage_key
 echo
 echo "Revisando Cuenta de Almacenamiento" $storage_account_name
 
-###script para mostrar los containers
-
 echo 
 
 # mostrar containers en cuenta de almacenamiento
