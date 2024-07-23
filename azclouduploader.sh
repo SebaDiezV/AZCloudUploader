@@ -11,6 +11,13 @@ echo 'Versión actual: 1.1'
 
 echo 'Recuerda como paso previo tener instalado Azure CLI en tu dispositivo'
 
-echo 'inicia sesión en Azure para continuar?
+echo 'inicia sesión en Azure para continuar'
 
 #az_login
+
+#prueba
+
+
+
+
+
