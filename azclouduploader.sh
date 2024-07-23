@@ -20,7 +20,7 @@ echo
 read -p "Ingresa el nombre de la Cuenta de Almacenamiento: " storage_account_name
 read -s -p "Ingresa tu Contraseña de almacenamiento: " storage_account-key
 echo
-echo "Revisando Cuenta de Almacenamiento" $storage_account_name
+echo "Revisando Cuenta de Almacenamiento $storage_account_name"
 
 #### az storage account check-name --name $storage_account_name --query nameAvailable
 ##si nombre es false - existe - continuar
