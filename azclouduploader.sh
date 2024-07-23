@@ -22,6 +22,9 @@ read -s -p "Ingresa tu Contraseña de almacenamiento: " storage_account-key
 echo
 echo "Revisando Cuenta de Almacenamiento" $storage_account_name
 
+#### az storage account check-name --name $storage_account_name --query nameAvailable
+##si nombre es false - existe - continuar
+##si nombre es true - disponible - volver a solicitar
 echo 
 
 # mostrar containers en cuenta de almacenamiento
@@ -32,7 +35,9 @@ echo "estos son los containers disponibles en la cuenta de almacenamiento"
 
 echo
 read -p "Ingresa el nombre del container al que deseas subir el archivo: " container_name
-
+####az storage container exists --account-name mystorageccount --account-key 00000000 --name mycontainer
+####loop para revisar nombre del container
+echo
 echo "subiendo archivo..."
 
 # Subir Azure Blob Storage
