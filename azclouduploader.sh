@@ -18,7 +18,7 @@ echo 'inicia sesión en Azure para continuar'
 echo
 #información de cuenta de almacenamiento
 read -p "Ingresa el nombre de la Cuenta de Almacenamiento: " storage_account_name
-read -s -p "Ingresa tu Contraseña de almacenamiento: " storage_key
+read -s -p "Ingresa tu Contraseña de almacenamiento: " storage_account-key
 echo
 echo "Revisando Cuenta de Almacenamiento" $storage_account_name
 
@@ -28,6 +28,8 @@ echo
 echo "estos son los containers disponibles en la cuenta de almacenamiento"
 
 #######escript para containers
+##az storage container list --account-name $storage_account_name --account-key $storage_account_key --query "[].{name:name}" --output tsv
+
 echo
 read -p "Ingresa el nombre del container al que deseas subir el archivo: " container_name
 
