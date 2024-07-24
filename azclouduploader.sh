@@ -42,7 +42,7 @@ echo
 echo "estos son los containers disponibles en la cuenta de almacenamiento"
 
 #Mostrar containers
-mostrar_containers() {
+show_containers() {
   containers_array=($( az storage container list --account-name $storage_account_name --account-key $storage_account_key --query "[].{name:name}" --output tsv | head))
   for i in "${containers_array[@]}"
   do
@@ -83,5 +83,6 @@ else
   echo "Error: Subir archivo a Azure Blob Storage Falló"
 fi
 
-
-  
+check_storage
+show_containers  
+check_container
