@@ -59,7 +59,7 @@ check_container() {
         do
             if [[ "$container_name" == "$j" ]]; then
                 container_exists=true
-                echo "Region exists"
+                echo "Container correcto, subiendo archivo..."
                 break
             else
                 continue
