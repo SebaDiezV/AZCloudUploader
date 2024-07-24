@@ -21,7 +21,7 @@ check_storage() {
   local storage_exists=false
   until [[ "$storage_exists" = true ]]; do
     read -p "Ingresa el nombre de la Cuenta de Almacenamiento: " storage_account_name
-    read -s -p "Ingresa tu Contraseña de Almacenamiento: " storage_accountkey
+    read -s -p "Ingresa tu Contraseña de Almacenamiento: " storage_account_key
     echo
     echo "Revisando Cuenta de Almacenamiento $storage_account_name"
     storage_check=$( az storage account check-name --name $storage_account_name --query nameAvailable)
@@ -83,6 +83,7 @@ else
   echo "Error: Subir archivo a Azure Blob Storage Falló"
 fi
 
+echo "Proceso completado."
 check_storage
 show_containers  
 check_container
