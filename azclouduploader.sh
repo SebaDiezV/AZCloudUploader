@@ -25,7 +25,7 @@ check_storage() {
     echo
     echo "Revisando Cuenta de Almacenamiento $storage_account_name"
     storage_check=$( az storage account check-name --name $storage_account_name --query nameAvailable)
-    if [[ "$storage_check" == "$storage_exists"]]; then
+    if [[ "$storage_check" == "$storage_exists" ]]; then
       storage_exists=true
       echo "Existe la cuenta de almacenamiento"
       break
