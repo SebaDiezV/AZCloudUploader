@@ -11,19 +11,19 @@ Antes de utilizar esta herramienta, asegurate de contar con lo soguiente:
  * Cuenta de Azure con permisos para administrar contenedores de Blob
 
    
-# intsalación
+# instalación
 1- Clona el repositorio a tu equipo local:
-git clone https://github.com/SebaDiezV/AZCloudUploader.git
+* git clone https://github.com/SebaDiezV/AZCloudUploader.git
 
 2- Ingresa al directorio del script:
-cd AZCloudUploader
+* cd AZCloudUploader
 
 3- cambia los permisos para ejecutar el script
-chmod +x AZCloudUploader.sh
+* chmod +x AZCloudUploader.sh
 
 # Uso 
 1- Ejecutar el script indicando la ruta del archivo que va a subir
-./AZCloudUploader.sh /path/to/file.txt
+* ./AZCloudUploader.sh /path/to/file.txt
 
 2- Seguir las indicaciones del script
 
