@@ -87,3 +87,4 @@ echo "Proceso completado."
 check_storage
 show_containers  
 check_container
+exit
